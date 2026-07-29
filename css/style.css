@@ -371,3 +371,67 @@ BOTONES HERO
     }
 
 }
+/* =========================
+   VERSION MOVIL
+========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Contenedor principal */
+    .container,
+    section,
+    main {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* Logo / abeja */
+    img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    /* Títulos */
+    h1 {
+        font-size: 28px !important;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 22px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    /* Textos */
+    p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Botones */
+    button,
+    .btn {
+        font-size: 15px;
+        padding: 12px 18px;
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Menú */
+    nav {
+        flex-direction: column;
+    }
+
+    /* Espaciados */
+    .hero {
+        padding: 30px 10px;
+    }
+
+}
