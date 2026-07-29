@@ -1,466 +1,382 @@
-/*=========================================
-RESET
-=========================================*/
+/* ==========================
+   BEE HIVE CONSTRUCTION
+   STYLE CSS
+========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
 
-    font-family:'Poppins',sans-serif;
-
-    background:#0F0F0F;
-
-    color:white;
-
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #1d1d1d;
 }
 
-/*=========================================
-HEADER
-=========================================*/
 
-header{
-
-    width:100%;
-
-    background:#151515;
-
-    border-bottom:2px solid #8B6B2E;
-
-    position:fixed;
-
-    top:0;
-
-    z-index:1000;
-
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.contenedor{
 
-    width:90%;
+/* ==========================
+   HEADER
+========================== */
 
-    max-width:1300px;
-
-    margin:auto;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:20px 0;
-
-}
-/*=========================
-LOGO 
-=========================*/
-
-.logo{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:15px;
-
+header {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 0;
 }
 
-.logo img{
 
-    width:65px;
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
 
-    transition:.4s;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo img:hover{
 
-    transform:rotate(-8deg) scale(1.05);
+/* LOGO */
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-.logo-texto h2{
 
-    color:#C9A227;
-
-    font-size:30px;
-
-    margin:0;
-
+.logo img {
+    width: 85px;
+    height: auto;
 }
 
-.logo-texto span{
 
-    color:white;
-
-    font-size:14px;
-
-    letter-spacing:2px;
-
+.logo-texto h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d89b00;
 }
 
-/*=========================================
-MENU
-=========================================*/
 
-nav{
-
-    display:flex;
-
-    gap:35px;
-
+.logo-texto span {
+    font-size: 14px;
+    color: #555;
 }
 
-nav a{
 
-    color:white;
+/* MENU */
 
-    text-decoration:none;
-
-    transition:.3s;
-
-    font-weight:500;
-
+nav {
+    display: flex;
+    gap: 25px;
 }
 
-nav a:hover{
 
-    color:#C9A227;
+nav a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+nav a:hover {
+    color: #d89b00;
+}
+
+
+/* BOTON HEADER */
+
+.boton {
+
+    background: #d89b00;
+    color: white;
+
+    padding: 12px 28px;
+    border-radius: 30px;
+
+    font-weight: 600;
+}
+
+
+
+/* ==========================
+   HERO
+========================== */
+
+
+.hero {
+
+    min-height: 80vh;
+
+    display: flex;
+    align-items: center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #fff8df,
+        #ffffff
+    );
 
 }
 
-/*=========================================
-BOTON HEADER
-=========================================*/
 
-.boton{
+.hero-contenedor {
 
-    text-decoration:none;
+    width: 90%;
+    max-width: 1200px;
 
-    background:#C9A227;
+    margin: auto;
 
-    color:#111;
+    display: flex;
 
-    padding:14px 26px;
+    align-items: center;
 
-    border-radius:40px;
+    justify-content: space-between;
 
-    font-weight:700;
-
-    transition:.3s;
+    gap: 50px;
 
 }
 
-.boton:hover{
 
-    background:#8B6B2E;
 
-    color:white;
+.hero-texto {
 
-}
-/*======================================
-HERO NUEVO
-======================================*/
-
-.hero{
-
-    min-height:100vh;
-
-    display:flex;
-
-    align-items:center;
-
-    background:#0f0f0f;
-
-    padding-top:100px;
+    flex: 1;
 
 }
 
-.hero-contenedor{
 
-    width:90%;
+.subtitulo {
 
-    max-width:1400px;
-
-    margin:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:space-between;
-
-    gap:60px;
+    color: #d89b00;
+    font-weight: 600;
 
 }
 
-.hero-texto{
 
-    flex:1;
 
-}
+.hero-texto h1 {
 
-.hero-imagen{
+    font-size: 52px;
 
-    flex:1;
+    line-height: 1.15;
 
-    display:flex;
+    margin: 20px 0;
 
-    justify-content:center;
+    font-weight: 800;
 
 }
 
-.hero-imagen img{
 
-    width:100%;
 
-    max-width:520px;
+.hero-texto p {
 
-    transition:.4s;
+    font-size: 18px;
 
-    filter:drop-shadow(0px 0px 35px rgba(201,162,39,.35));
+    color: #555;
 
-}
-
-.hero-imagen img:hover{
-
-    transform:scale(1.05);
+    margin-bottom: 35px;
 
 }
 
-.subtitulo{
 
-    color:#C9A227;
 
-    letter-spacing:4px;
+/* BOTONES HERO */
 
-    font-size:18px;
+.hero-botones {
 
-    font-weight:600;
+    display: flex;
 
-}
-
-.hero h1{
-
-    margin-top:15px;
-
-    color:white;
-
-    font-size:64px;
-
-    line-height:1.1;
+    gap: 20px;
 
 }
 
-.hero p{
 
-    margin-top:30px;
 
-    color:#cccccc;
+.btn-principal {
 
-    font-size:22px;
+    background: #d89b00;
 
-    line-height:1.7;
+    color: white;
 
-}
+    padding: 15px 35px;
 
-.hero-botones{
+    border-radius: 30px;
 
-    display:flex;
-
-    gap:20px;
-
-    margin-top:45px;
-
-}
-/*=========================================
-BOTONES HERO
-=========================================*/
-
-.hero-botones{
-
-    margin-top:50px;
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
+    font-weight: 600;
 
 }
 
-.btn-principal{
 
-    background:#C9A227;
 
-    color:#111;
+.btn-secundario {
 
-    padding:18px 40px;
+    border: 2px solid #d89b00;
 
-    border-radius:50px;
+    color: #d89b00;
 
-    text-decoration:none;
+    padding: 13px 35px;
 
-    font-weight:700;
+    border-radius: 30px;
 
-}
-
-.btn-secundario{
-
-    border:2px solid #C9A227;
-
-    color:#C9A227;
-
-    padding:18px 40px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:700;
+    font-weight: 600;
 
 }
 
-.btn-principal:hover{
 
-    background:#8B6B2E;
 
-    color:white;
+/* IMAGEN */
+
+.hero-imagen {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+
+.hero-imagen img {
+
+    width: 420px;
+
+    max-width: 100%;
 
 }
 
-.btn-secundario:hover{
 
-    background:#C9A227;
 
-    color:#111;
+/* ==========================
+   VERSION MOVIL
+========================== */
 
-}
-/* Ajustes para celular */
-@media (max-width: 768px) {
 
-    body {
-        overflow-x: hidden;
+@media(max-width:768px){
+
+
+    header {
+
+        padding: 15px 0;
+
     }
+
+
+    .contenedor {
+
+        width: 90%;
+
+        flex-direction: column;
+
+        gap: 20px;
+
+    }
+
 
     .logo img {
-        width: 150px;
-        height: auto;
+
+        width: 70px;
+
     }
 
-    h1 {
-        font-size: 32px;
+
+    .logo-texto h2 {
+
+        font-size: 22px;
+
     }
 
-    p {
-        font-size: 16px;
-    }
 
-    .container {
-        width: 90%;
-        margin: auto;
-    }
-
-    button {
-        width: 100%;
-        max-width: 300px;
-    }
-
-}
-/* =========================
-   VERSION MOVIL
-========================= */
-
-@media (max-width: 768px) {
-
-    body {
-        overflow-x: hidden;
-    }
-
-    /* Contenedor principal */
-    .container,
-    section,
-    main {
-        width: 90%;
-        margin: auto;
-    }
-
-    /* Logo / abeja */
-    img {
-        max-width: 80%;
-        height: auto;
-    }
-
-    /* Títulos */
-    h1 {
-        font-size: 28px !important;
-        line-height: 1.2;
-    }
-
-    h2 {
-        font-size: 22px !important;
-    }
-
-    h3 {
-        font-size: 18px !important;
-    }
-
-    /* Textos */
-    p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    /* Botones */
-    button,
-    .btn {
-        font-size: 15px;
-        padding: 12px 18px;
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    /* Menú */
     nav {
+
+        display: none;
+
+    }
+
+
+
+    .boton {
+
+        padding: 10px 25px;
+
+    }
+
+
+
+    .hero {
+
+        min-height: auto;
+
+        padding: 40px 0;
+
+    }
+
+
+
+    .hero-contenedor {
+
         flex-direction: column;
+
+        text-align: center;
+
+        gap: 30px;
+
     }
 
-    /* Espaciados */
-    .hero {
-        padding: 30px 10px;
+
+
+    .hero-texto h1 {
+
+        font-size: 32px;
+
     }
 
-}
-@media (max-width: 600px) {
 
-    body {
-        overflow-x: hidden;
+
+    .hero-texto p {
+
+        font-size: 15px;
+
     }
 
-    .hero {
-        padding: 30px 20px;
+
+
+    .hero-botones {
+
+        flex-direction: column;
+
+        align-items: center;
+
     }
 
-    .hero img {
-        width: 180px;
-        max-width: 80%;
+
+
+    .btn-principal,
+    .btn-secundario {
+
+        width: 90%;
+
     }
 
-    h1 {
-        font-size: 34px;
+
+
+    .hero-imagen img {
+
+        width: 220px;
+
     }
 
-    p {
-        font-size: 16px;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 12px 20px;
-    }
 
 }
