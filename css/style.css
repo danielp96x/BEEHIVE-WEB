@@ -435,65 +435,32 @@ BOTONES HERO
     }
 
 }
-/* ===============================
-   AJUSTE GENERAL PARA CELULARES
-================================ */
-
-@media screen and (max-width: 600px) {
-
-    * {
-        box-sizing: border-box;
-    }
+@media (max-width: 600px) {
 
     body {
-        width: 100%;
         overflow-x: hidden;
     }
 
-    /* Logo / avatar abeja */
-    .logo img,
-    .logo,
-    header img {
-        max-width: 180px !important;
-        height: auto;
+    .hero {
+        padding: 30px 20px;
     }
 
-    /* Titulo principal */
+    .hero img {
+        width: 180px;
+        max-width: 80%;
+    }
+
     h1 {
-        font-size: 30px !important;
-        text-align: center;
+        font-size: 34px;
     }
 
-    h2 {
-        font-size: 22px !important;
-    }
-
-    /* Textos */
     p {
-        font-size: 15px !important;
+        font-size: 16px;
     }
 
-    /* Secciones */
-    section,
-    .hero,
-    .container {
-        width: 100% !important;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    /* Botones */
-    button,
-    a.btn {
-        width: 100%;
-        max-width: 280px;
-        font-size: 15px;
-    }
-
-    /* Imágenes */
-    img {
-        max-width: 100%;
-        height: auto;
+    button {
+        font-size: 16px;
+        padding: 12px 20px;
     }
 
 }
