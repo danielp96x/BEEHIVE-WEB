@@ -112,19 +112,24 @@ nav a:hover {
    HERO
 ========================== */
 
-
 .hero {
 
     min-height: 80vh;
 
     display: flex;
+
     align-items: center;
 
     background:
+    radial-gradient(
+        circle at right,
+        rgba(216,155,0,0.25),
+        transparent 35%
+    ),
     linear-gradient(
         135deg,
-        #fff8df,
-        #ffffff
+        #0b0b0b,
+        #3b2415
     );
 
 }
@@ -560,6 +565,190 @@ nav a:hover {
             #0b0b0b,
             #3b2415
         );
+
+    }
+
+
+}
+/* ==========================
+   AJUSTE CENTRADO HERO
+========================== */
+
+.hero-texto {
+
+    text-align: center;
+
+}
+
+
+.hero-texto h1 {
+
+    max-width: 650px;
+
+    margin: 20px auto;
+
+}
+
+
+.hero-texto p {
+
+    max-width: 550px;
+
+    margin: 0 auto 35px;
+
+}
+
+
+.hero-botones {
+
+    justify-content: center;
+
+}
+
+
+/* En computador mantenemos equilibrio con la abeja */
+
+@media(min-width:769px){
+
+    .hero-texto {
+
+        transform: translateX(20px);
+
+    }
+
+}
+/* ==========================
+   SERVICIOS
+========================== */
+
+.servicios {
+
+    padding: 80px 0;
+
+    background: #1a1009;
+
+}
+
+
+.servicios-contenedor {
+
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+
+.servicios h2 {
+
+    font-size: 42px;
+
+    color: #d89b00;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.servicios-subtitulo {
+
+    color: #d8c7b0;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+
+/* TARJETAS */
+
+
+.tarjetas-servicios {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+
+
+.tarjeta {
+
+    background: #0b0b0b;
+
+    border: 1px solid #d89b00;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+
+}
+
+
+
+.tarjeta h3 {
+
+    color: #d89b00;
+
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.tarjeta p {
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+}
+
+
+
+
+.tarjeta:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+    0 15px 30px rgba(216,155,0,0.25);
+
+}
+
+
+
+/* CELULAR */
+
+@media(max-width:768px){
+
+
+    .tarjetas-servicios {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .servicios h2 {
+
+        font-size: 32px;
 
     }
 
