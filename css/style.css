@@ -380,3 +380,188 @@ nav a:hover {
 
 
 }
+/* Efecto abeja protagonista */
+
+.hero-imagen img {
+
+    width: 420px;
+    filter: drop-shadow(0px 20px 30px rgba(216,155,0,0.35));
+
+    animation: flotar 4s ease-in-out infinite;
+
+}
+
+
+@keyframes flotar {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}/* ==================================
+   BEE HIVE CONSTRUCTION
+   IDENTIDAD CAFE - NEGRO - DORADO
+================================== */
+
+
+/* Fondo general */
+
+body {
+    background: #120d09;
+    color: white;
+}
+
+
+
+/* HEADER */
+
+header {
+    background: #0b0b0b;
+}
+
+
+.logo-texto h2 {
+    color: #d89b00;
+}
+
+
+.logo-texto span {
+    color: #c8a47e;
+}
+
+
+nav a {
+    color: #ffffff;
+}
+
+
+nav a:hover {
+    color: #d89b00;
+}
+
+
+
+/* BOTON HEADER */
+
+.boton {
+
+    background: #d89b00;
+    color: #111;
+
+}
+
+
+
+/* HERO */
+
+.hero {
+
+    background:
+    radial-gradient(
+        circle at right,
+        rgba(216,155,0,0.25),
+        transparent 35%
+    ),
+    linear-gradient(
+        135deg,
+        #0b0b0b,
+        #3b2415
+    );
+
+}
+
+
+
+/* TITULO */
+
+.hero-texto h1 {
+
+    color: white;
+
+}
+
+
+.hero-texto h1::first-letter {
+
+    color: #d89b00;
+
+}
+
+
+
+.hero-texto p {
+
+    color: #d8c7b0;
+
+}
+
+
+
+/* BOTON PRINCIPAL */
+
+.btn-principal {
+
+    background: #d89b00;
+
+    color: #111;
+
+}
+
+
+
+.btn-principal:hover {
+
+    background: #f5b900;
+
+}
+
+
+
+/* BOTON SECUNDARIO */
+
+.btn-secundario {
+
+    border-color: #d89b00;
+
+    color: #d89b00;
+
+}
+
+
+
+/* ABEJA PROTAGONISTA */
+
+.hero-imagen img {
+
+    filter:
+    drop-shadow(0 0 25px rgba(216,155,0,0.45));
+
+}
+
+
+
+/* MOVIL */
+
+@media(max-width:768px){
+
+    .hero {
+
+        background:
+        linear-gradient(
+            180deg,
+            #0b0b0b,
+            #3b2415
+        );
+
+    }
+
+
+}
