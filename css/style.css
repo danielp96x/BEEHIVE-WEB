@@ -754,3 +754,136 @@ nav a:hover {
 
 
 }
+/* ==========================
+   ANIMACION ABEJA MOVIL
+========================== */
+
+
+.hero-imagen img {
+
+    animation: abejaFlota 4s ease-in-out infinite;
+
+}
+
+
+
+@keyframes abejaFlota {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+
+
+/* Ajuste celular */
+
+@media(max-width:768px){
+
+
+    .hero-imagen {
+
+        margin-top: 20px;
+
+    }
+
+
+    .hero-imagen img {
+
+        width: 220px;
+
+        animation: abejaFlota 3s ease-in-out infinite;
+
+        filter:
+        drop-shadow(0 0 20px rgba(216,155,0,0.45));
+
+    }
+
+
+}
+/* ==========================
+   ABEJA GRANDE HERO MOVIL
+========================== */
+
+@media(max-width:768px){
+
+    .hero-contenedor {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    .hero-imagen {
+
+        display: flex !important;
+
+        justify-content: center;
+
+        align-items: center;
+
+        width: 100%;
+
+        margin-top: 30px;
+
+        order: 2;
+
+    }
+
+
+    .hero-imagen img {
+
+        display: block !important;
+
+        width: 230px !important;
+
+        max-width: 80%;
+
+        height: auto;
+
+        animation: abejaFlota 3s ease-in-out infinite;
+
+        filter:
+        drop-shadow(0 0 25px rgba(216,155,0,0.45));
+
+    }
+
+
+}
+
+
+@keyframes abejaFlota {
+
+    0% {
+        transform: translateY(0);
+    }
+
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
