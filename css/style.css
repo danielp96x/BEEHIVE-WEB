@@ -238,30 +238,60 @@ nav a:hover {
 
 }
 
-
-
-/* IMAGEN */
-
-.hero-imagen {
-
-    flex: 1;
-
-    display: flex;
-
-    justify-content: center;
-
-}
-
-
+/* ==========================
+   ABEJA PRINCIPAL FINAL
+========================== */
 
 .hero-imagen img {
 
     width: 420px;
 
-    max-width: 100%;
+    animation: vueloAbeja 4s ease-in-out infinite;
+
+    filter:
+    drop-shadow(0 0 25px rgba(216,155,0,0.55));
 
 }
 
+
+
+@keyframes vueloAbeja {
+
+    0% {
+
+        transform: translateY(0px) rotate(0deg);
+
+    }
+
+
+    50% {
+
+        transform: translateY(-20px) rotate(2deg);
+
+    }
+
+
+    100% {
+
+        transform: translateY(0px) rotate(0deg);
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .hero-imagen img {
+
+        width:230px;
+
+    }
+
+
+}
 
 
 /* ==========================
@@ -385,17 +415,6 @@ nav a:hover {
 
 
 }
-/* Efecto abeja protagonista */
-
-.hero-imagen img {
-
-    width: 420px;
-    filter: drop-shadow(0px 20px 30px rgba(216,155,0,0.35));
-
-    animation: flotar 4s ease-in-out infinite;
-
-}
-
 
 @keyframes flotar {
 
@@ -539,19 +558,6 @@ nav a:hover {
     color: #d89b00;
 
 }
-
-
-
-/* ABEJA PROTAGONISTA */
-
-.hero-imagen img {
-
-    filter:
-    drop-shadow(0 0 25px rgba(216,155,0,0.45));
-
-}
-
-
 
 /* MOVIL */
 
@@ -885,5 +891,610 @@ nav a:hover {
     100% {
         transform: translateY(0);
     }
+
+}
+/* ==========================
+   NOSOTROS
+========================== */
+
+
+.nosotros {
+
+    padding: 90px 0;
+
+    background: #0b0b0b;
+
+}
+
+
+
+.nosotros-contenedor {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+
+
+.nosotros-texto {
+
+    text-align: center;
+
+}
+
+
+
+.nosotros h2 {
+
+    font-size: 42px;
+
+    color: #d89b00;
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.nosotros-texto p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+    color: #d8c7b0;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+/* VALORES */
+
+
+.valores {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+
+.valores div {
+
+    background: #1a1009;
+
+    border: 1px solid #d89b00;
+
+    padding: 30px 20px;
+
+    border-radius: 18px;
+
+    transition: .3s;
+
+}
+
+
+
+.valores h3 {
+
+    color: #d89b00;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.valores span {
+
+    color: white;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+}
+
+
+
+.valores div:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow:
+
+    0 15px 30px rgba(216,155,0,.25);
+
+}
+
+
+
+/* MOVIL */
+
+@media(max-width:768px){
+
+
+    .nosotros {
+
+        padding: 60px 0;
+
+    }
+
+
+    .nosotros h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .valores {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+}
+/* ==========================
+   PROYECTOS
+========================== */
+
+
+.proyectos {
+
+    padding: 90px 0;
+
+    background: #1a1009;
+
+}
+
+
+
+.proyectos-contenedor {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    text-align: center;
+
+}
+
+
+
+.proyectos h2 {
+
+    font-size: 42px;
+
+    color: #d89b00;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.proyectos-subtitulo {
+
+    color: #d8c7b0;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+
+/* GALERIA */
+
+
+.galeria-proyectos {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+
+}
+
+
+
+.proyecto {
+
+    background: #0b0b0b;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #d89b00;
+
+    transition: .3s;
+
+}
+
+
+
+.proyecto img {
+
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+}
+
+
+
+.proyecto-info {
+
+    padding: 25px;
+
+}
+
+
+
+.proyecto-info h3 {
+
+    color: #d89b00;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+}
+
+
+
+.proyecto-info p {
+
+    color: white;
+
+    font-size: 15px;
+
+}
+
+
+
+.proyecto:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow:
+
+    0 15px 35px rgba(216,155,0,.25);
+
+}
+
+
+
+/* MOVIL */
+
+@media(max-width:768px){
+
+
+    .galeria-proyectos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .proyecto img {
+
+        height: 220px;
+
+    }
+
+
+    .proyectos h2 {
+
+        font-size: 32px;
+
+    }
+
+
+}
+/* ==========================
+   ABEJA PRINCIPAL PREMIUM
+========================== */
+
+
+.hero-imagen {
+
+    animation: entradaAbeja 1.5s ease forwards;
+
+}
+
+
+
+.hero-imagen img {
+
+    animation: vueloPremium 4s ease-in-out infinite !important;
+
+    transform-origin: center;
+
+    filter:
+    drop-shadow(0 0 25px rgba(216,155,0,0.65));
+
+}
+
+
+
+
+@keyframes entradaAbeja {
+
+
+    from {
+
+        opacity: 0;
+
+        transform: translateX(120px) scale(0.8);
+
+    }
+
+
+    to {
+
+        opacity: 1;
+
+        transform: translateX(0) scale(1);
+
+    }
+
+
+}
+
+
+
+
+@keyframes vueloPremium {
+
+
+    0% {
+
+        transform:
+
+        translateY(0)
+
+        rotate(0deg);
+
+    }
+
+
+
+    25% {
+
+        transform:
+
+        translateY(-15px)
+
+        rotate(2deg);
+
+    }
+
+
+
+    50% {
+
+        transform:
+
+        translateY(-30px)
+
+        rotate(0deg);
+
+    }
+
+
+
+    75% {
+
+        transform:
+
+        translateY(-15px)
+
+        rotate(-2deg);
+
+    }
+
+
+
+    100% {
+
+        transform:
+
+        translateY(0)
+
+        rotate(0deg);
+
+    }
+
+
+}
+/* ==========================
+   CONTACTO
+========================== */
+
+
+.contacto {
+
+    padding: 90px 0;
+
+    background:
+    linear-gradient(
+        135deg,
+        #3b2415,
+        #120d09
+    );
+
+}
+
+
+
+.contacto-contenedor {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin: auto;
+
+    text-align: center;
+
+    background: #0b0b0b;
+
+    border: 1px solid #d89b00;
+
+    border-radius: 25px;
+
+    padding: 60px 30px;
+
+}
+
+
+
+
+.contacto h2 {
+
+    font-size: 42px;
+
+    color: #d89b00;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.contacto p {
+
+    color: #d8c7b0;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+
+}
+
+
+
+
+.contacto-botones {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+
+
+
+.btn-whatsapp {
+
+    background: #25D366;
+
+    color: white;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+}
+
+
+
+.btn-cotizar {
+
+    background: #d89b00;
+
+    color: #111;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+
+}
+
+
+
+.btn-whatsapp:hover,
+.btn-cotizar:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+
+
+/* MOVIL */
+
+@media(max-width:768px){
+
+
+    .contacto {
+
+        padding: 60px 0;
+
+    }
+
+
+    .contacto h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .contacto p {
+
+        font-size: 15px;
+
+    }
+
+
+    .contacto-botones {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    .btn-whatsapp,
+    .btn-cotizar {
+
+        width: 90%;
+
+    }
+
 
 }
