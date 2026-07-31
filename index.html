@@ -1,387 +1,539 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bee Hive | Soluciones Integrales</title>
+    <title>Bee Hive | Alquiler de Herramientas</title>
 
-    <!-- Fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
-
 
 <body>
 
+    <!-- ========================================
+         HEADER
+    ========================================= -->
 
-    <!-- ================= HEADER ================= -->
+    <header class="header">
 
-    <header>
+        <a href="index.html" class="logo">
+            <span class="logo-icon">🐝</span>
 
-        <div class="contenedor">
-
-            <div class="logo">
-
-                <img src="assets/images/avatar.png" alt="Bee Hive">
-
-                <div class="logo-texto">
-
-                    <h2>Bee Hive</h2>
-
-                    <span>Soluciones Integrales</span>
-
-                </div>
-
+            <div>
+                <h1>Bee Hive</h1>
+                <span>RENTALS</span>
             </div>
+        </a>
 
 
-            <nav>
+        <nav class="nav">
 
-                <a href="#">Inicio</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Servicios</a>
-                <a href="#">Proyectos</a>
-                <a href="#">Contacto</a>
-
-            </nav>
-
-
-            <a href="#" class="boton">
-                Cotizar
+            <a href="index.html" class="active">
+                Inicio
             </a>
 
+            <a href="pages/herramientas.html">
+                Herramientas
+            </a>
 
-        </div>
+            <a href="pages/clientes.html">
+                Clientes
+            </a>
+
+            <a href="pages/alquileres.html">
+                Alquileres
+            </a>
+
+            <a href="pages/contacto.html">
+                Contacto
+            </a>
+
+        </nav>
+
+
+        <button class="menu-btn" id="menuBtn">
+            ☰
+        </button>
 
     </header>
 
 
 
+    <!-- ========================================
+         HERO
+    ========================================= -->
 
-    <!-- ================= HERO ================= -->
+    <main>
 
-    <section class="hero">
-
-        <div class="hero-contenedor">
-
-
-            <div class="hero-texto">
+        <section class="hero-home">
 
 
-                <span class="subtitulo">
-                    Construcción y soluciones integrales
+            <!-- CONTENIDO -->
+
+            <div class="hero-home-content">
+
+                <span class="hero-welcome">
+                    🐝 BIENVENIDO A BEE HIVE
                 </span>
 
 
-                <h1>
-                    Soluciones Integrales para tu Hogar y Empresa
-                </h1>
+                <h2>
+                    Tus herramientas.
+                    <span>Nuestro trabajo.</span>
+                </h2>
 
 
                 <p>
-                    Bienes Raíces • Construcción • Arreglos Locativos • Alquiler de Herramientas
+                    Encuentra las herramientas que necesitas para
+                    construcción, mantenimiento y tus próximos proyectos.
+                    Gestiona tus alquileres de forma sencilla y segura.
                 </p>
 
 
+                <div class="hero-buttons">
 
-                <div class="hero-botones">
+                    <a href="pages/herramientas.html" class="btn btn-primary">
 
+                        🔧 Explorar herramientas
 
-                    <a href="#" class="btn-principal">
-                        Ver Servicios
                     </a>
 
 
-                    <a href="#" class="btn-secundario">
-                        Contáctanos
+                    <a href="pages/alquileres.html" class="btn btn-secondary">
+
+                        📋 Ver alquileres
+
                     </a>
 
+                </div>
+
+
+                <!-- PEQUEÑA INFORMACIÓN -->
+
+                <div class="hero-trust">
+
+                    <div>
+                        <strong>✓</strong>
+                        Herramientas confiables
+                    </div>
+
+                    <div>
+                        <strong>✓</strong>
+                        Alquiler sencillo
+                    </div>
+
+                    <div>
+                        <strong>✓</strong>
+                        Atención personalizada
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ABEJA -->
+
+            <div class="hero-bee">
+
+                <div class="bee-glow"></div>
+                ```html
+                <img src="assets/images/bee-home.png" alt="Abeja de Bee Hive Rentals">
+                ```
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             ACCESOS RÁPIDOS
+        ========================================= -->
+
+        <section class="quick-access">
+
+            <div class="section-title">
+
+                <span>TODO EN UN SOLO LUGAR</span>
+
+                <h2>
+                    ¿Qué necesitas hacer?
+                </h2>
+
+                <p>
+                    Accede rápidamente a las principales funciones
+                    de Bee Hive.
+                </p>
+
+            </div>
+
+
+            <div class="quick-grid">
+
+
+                <a href="pages/herramientas.html" class="quick-card">
+
+                    <div class="quick-icon">
+                        🔧
+                    </div>
+
+                    <div>
+                        <h3>
+                            Herramientas
+                        </h3>
+
+                        <p>
+                            Consulta las herramientas disponibles
+                            para alquiler.
+                        </p>
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <a href="pages/alquileres.html" class="quick-card">
+
+                    <div class="quick-icon">
+                        📋
+                    </div>
+
+                    <div>
+                        <h3>
+                            Alquileres
+                        </h3>
+
+                        <p>
+                            Consulta y administra los alquileres
+                            activos.
+                        </p>
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <a href="pages/clientes.html" class="quick-card">
+
+                    <div class="quick-icon">
+                        👥
+                    </div>
+
+                    <div>
+                        <h3>
+                            Clientes
+                        </h3>
+
+                        <p>
+                            Administra la información de tus clientes.
+                        </p>
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+
+                <a href="#informacion" class="quick-card">
+
+                    <div class="quick-icon">
+                        📊
+                    </div>
+
+                    <div>
+                        <h3>
+                            Información
+                        </h3>
+
+                        <p>
+                            Consulta el estado general del sistema.
+                        </p>
+                    </div>
+
+                    <span class="quick-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             CÓMO FUNCIONA
+        ========================================= -->
+
+        <section class="how-section">
+
+            <div class="section-title">
+
+                <span>ASÍ DE SENCILLO</span>
+
+                <h2>
+                    Alquila. Trabaja. Devuelve.
+                </h2>
+
+                <p>
+                    Diseñamos el proceso para que puedas concentrarte
+                    en tu proyecto.
+                </p>
+
+            </div>
+
+
+            <div class="steps">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-icon">
+                        🔎
+                    </div>
+
+                    <h3>
+                        Encuentra
+                    </h3>
+
+                    <p>
+                        Busca la herramienta que necesitas
+                        para tu proyecto.
+                    </p>
 
                 </div>
 
 
+
+                <div class="step-line"></div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-icon">
+                        📋
+                    </div>
+
+                    <h3>
+                        Alquila
+                    </h3>
+
+                    <p>
+                        Solicita el alquiler y consulta
+                        las condiciones.
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-line"></div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-icon">
+                        🏗️
+                    </div>
+
+                    <h3>
+                        Trabaja
+                    </h3>
+
+                    <p>
+                        Utiliza la herramienta y lleva
+                        tu proyecto adelante.
+                    </p>
+
+                </div>
+
+
+
+                <div class="step-line"></div>
+
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        04
+                    </div>
+
+                    <div class="step-icon">
+                        ↩️
+                    </div>
+
+                    <h3>
+                        Devuelve
+                    </h3>
+
+                    <p>
+                        Devuelve la herramienta al finalizar
+                        tu alquiler.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             INFORMACIÓN
+        ========================================= -->
+
+        <section class="info-section" id="informacion">
+
+            <div class="info-content">
+
+                <span>
+                    🐝 BEE HIVE
+                </span>
+
+                <h2>
+                    Una colmena preparada
+                    para tu próximo proyecto.
+                </h2>
+
+                <p>
+                    Bee Hive nace como una solución para organizar
+                    y facilitar el alquiler de herramientas.
+                    Desde la disponibilidad hasta la devolución,
+                    queremos que todo esté bajo control.
+                </p>
+
+                <a href="pages/contacto.html" class="btn btn-primary">
+
+                    Conocer más
+
+                </a>
+
             </div>
 
 
+            <div class="info-badge">
+
+                <div class="honeycomb">
+                    🐝
+                </div>
+
+                <strong>
+                    TRABAJO
+                </strong>
+
+                <span>
+                    CONFIABLE
+                </span>
+
+            </div>
+
+        </section>
 
 
-            <div class="hero-imagen">
 
+        <!-- ========================================
+             CTA FINAL
+        ========================================= -->
 
-                <img src="assets/images/avatar.png" alt="Bee Hive Construction">
+        <section class="final-cta">
 
+            <div>
+
+                <span>
+                    ¿LISTO PARA COMENZAR?
+                </span>
+
+                <h2>
+                    Encuentra la herramienta
+                    que necesitas.
+                </h2>
 
             </div>
 
 
+            <a href="pages/herramientas.html" class="btn btn-primary">
+
+                Ver herramientas 🔧
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+
+            🐝
+
+            <strong>
+                Bee Hive
+            </strong>
+
+            <span>
+                RENTALS
+            </span>
 
         </div>
-
-
-    </section>
-
-    
-    <!-- ================= SERVICIOS ================= -->
-
-
-    <section class="servicios">
-
-
-        <div class="servicios-contenedor">
-
-
-            <h2>
-                Nuestros Servicios
-            </h2>
-
-
-            <p class="servicios-subtitulo">
-
-                Soluciones integrales para construcción,
-                vivienda y mantenimiento.
-
-            </p>
-
-
-
-            <div class="tarjetas-servicios">
-
-
-
-                <div class="tarjeta">
-
-
-                    <h3>
-                        🏗️ Construcción
-                    </h3>
-
-
-                    <p>
-                        Diseñamos y construimos proyectos
-                        con calidad y compromiso.
-                    </p>
-
-
-                </div>
-
-
-
-
-
-                <div class="tarjeta">
-
-
-                    <h3>
-                        🏠 Bienes Raíces
-                    </h3>
-
-
-                    <p>
-                        Compra, venta y asesoría
-                        para encontrar el espacio ideal.
-                    </p>
-
-
-                </div>
-
-
-
-
-
-                <div class="tarjeta">
-
-
-                    <h3>
-                        🔧 Arreglos Locativos
-                    </h3>
-
-
-                    <p>
-                        Remodelaciones y mantenimiento
-                        para tu hogar o empresa.
-                    </p>
-
-
-                </div>
-
-
-
-
-
-                <div class="tarjeta">
-
-
-                    <h3>
-                        🛠️ Herramientas
-                    </h3>
-
-
-                    <p>
-                        Alquiler de equipos para
-                        tus proyectos.
-                    </p>
-
-
-                </div>
-
-
-
-            </div>
-
-
-
-        </div>
-
-
-    </section>
-
-
-<!-- ================= PROYECTOS ================= -->
-
-<section class="proyectos">
-
-    <div class="proyectos-contenedor">
-
-        <h2>
-            Proyectos Destacados
-        </h2>
-
-        <p class="proyectos-subtitulo">
-            Creamos espacios funcionales con calidad,
-            diseño y compromiso.
-        </p>
-
-
-        <div class="galeria-proyectos">
-
-
-            <div class="proyecto">
-
-                <img src="assets/images/proyecto1.jpg" alt="Proyecto construcción">
-
-                <div class="proyecto-info">
-
-                    <h3>
-                        Construcción
-                    </h3>
-
-                    <p>
-                        Proyectos pensados para durar.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-
-            <div class="proyecto">
-
-                <img src="assets/images/proyecto2.jpg" alt="Remodelación">
-
-                <div class="proyecto-info">
-
-                    <h3>
-                        Remodelación
-                    </h3>
-
-                    <p>
-                        Transformamos espacios.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-
-
-            <div class="proyecto">
-
-                <img src="assets/images/proyecto3.jpg" alt="Mantenimiento">
-
-                <div class="proyecto-info">
-
-                    <h3>
-                        Mantenimiento
-                    </h3>
-
-                    <p>
-                        Soluciones para hogares y empresas.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
-
-<!-- ================= CONTACTO ================= -->
-
-<section class="contacto">
-
-
-    <div class="contacto-contenedor">
-
-
-        <h2>
-            ¿Tienes un proyecto en mente?
-        </h2>
 
 
         <p>
-            En Bee Hive estamos listos para ayudarte
-            a construir, transformar e invertir.
+            Sistema de gestión y alquiler de herramientas.
         </p>
 
 
+        <span>
+            © 2026 Bee Hive. Proyecto en desarrollo.
+        </span>
 
-        <div class="contacto-botones">
-
-
-            <a href="#" class="btn-whatsapp">
-
-                WhatsApp
-
-            </a>
+    </footer>
 
 
 
-            <a href="#" class="btn-cotizar">
-
-                Solicitar Cotización
-
-            </a>
-
-
-        </div>
-
-
-    </div>
-
-
-</section>
+    <script src="js/script.js"></script>
 
 </body>
 
 </html>
+```
