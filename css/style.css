@@ -1100,11 +1100,25 @@ button {
         /* HEADER */
 
         .header {
-            padding: 0 5%;
+            height: 78px;
+            width: 100%;
+            padding: 0 4%;
+        }
+
+        .logo img {
+            width: 118px;
+        }
+
+        .logo h1 {
+            display: none;
         }
 
         .menu-btn {
             display: block;
+            flex-shrink: 0;
+            font-size: 32px;
+            line-height: 1;
+            padding: 8px;
         }
 
         .nav {
@@ -1125,6 +1139,8 @@ button {
 
             background:
                 var(--negro);
+
+            z-index: 1100;
 
             border-bottom:
                 1px solid rgba(214, 169, 40, 0.20);

@@ -521,7 +521,7 @@ function enviarPedidoWhatsApp() {
 
 
     const numeroWhatsApp =
-        "573237900424";
+        "573045751373";
 
 
     let texto =
@@ -573,7 +573,7 @@ BEE HIVE INMOBILIARIA 🐝`;
 
     const urlWhatsApp =
 
-        "https://wa.me/" +
+        "https://api.whatsapp.com/send?phone=" +
 
         numeroWhatsApp +
 
@@ -596,7 +596,11 @@ BEE HIVE INMOBILIARIA 🐝`;
 // FORMULARIO DE CONTACTO → WHATSAPP
 // =====================================================
 
-function enviarWhatsApp() {
+function enviarWhatsApp(event) {
+
+    if (event) {
+        event.preventDefault();
+    }
 
     const nombreElement =
         document.getElementById("nombre");
@@ -715,7 +719,7 @@ function enviarWhatsApp() {
 
 
     const numeroWhatsApp =
-        "573237900424";
+        "573237904242";
 
 
     const textoWhatsApp =
@@ -745,7 +749,7 @@ ${mensaje}
 
     const urlWhatsApp =
 
-        "https://wa.me/" +
+        "https://api.whatsapp.com/send?phone=" +
 
         numeroWhatsApp +
 
@@ -786,8 +790,13 @@ document.addEventListener(
                 "click",
                 function () {
 
-                    nav.classList.toggle(
-                        "active"
+                    const abierto = nav.classList.toggle(
+                        "show"
+                    );
+
+                    menuBtn.setAttribute(
+                        "aria-expanded",
+                        abierto ? "true" : "false"
                     );
 
                 }
