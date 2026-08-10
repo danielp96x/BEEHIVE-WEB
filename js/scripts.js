@@ -521,7 +521,7 @@ function enviarPedidoWhatsApp() {
 
 
     const numeroWhatsApp =
-        "573237900424";
+        "573045751373";
 
 
     let texto =
@@ -596,7 +596,11 @@ BEE HIVE INMOBILIARIA 🐝`;
 // FORMULARIO DE CONTACTO → WHATSAPP
 // =====================================================
 
-function enviarWhatsApp() {
+function enviarWhatsApp(event) {
+
+    if (event) {
+        event.preventDefault();
+    }
 
     const nombreElement =
         document.getElementById("nombre");
