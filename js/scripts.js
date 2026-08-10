@@ -773,41 +773,23 @@ ${mensaje}
 document.addEventListener(
     "DOMContentLoaded",
     function () {
+const menuBtn = document.getElementById("menuBtn");
+const nav = document.querySelector(".nav");
 
-        const menuBtn =
-            document.getElementById("menuBtn");
+if (menuBtn && nav) {
 
-        const nav =
-            document.querySelector(".nav");
+    menuBtn.addEventListener("click", () => {
 
+        const abierto = nav.classList.toggle("show");
 
-        if (
-            menuBtn &&
-            nav
-        ) {
+        menuBtn.setAttribute(
+            "aria-expanded",
+            abierto ? "true" : "false"
+        );
 
-            menuBtn.addEventListener(
-                "click",
-                function () {
+    });
 
-                    const abierto = nav.classList.toggle(
-                        "show"
-                    );
-
-                    menuBtn.setAttribute(
-
-                        "aria-expanded",
-                        abierto ? "true" : "false"
-                    );
-                    nav.classList.toggle(
-                        "show"
-
-                    );
-
-                }
-            );
-
-        }
+}
 
 
         // Inicializar pedido
