@@ -791,7 +791,7 @@ document.addEventListener(
                 function () {
 
                     nav.classList.toggle(
-                        "active"
+                        "show"
                     );
 
                 }
