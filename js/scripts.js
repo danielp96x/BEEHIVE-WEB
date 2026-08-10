@@ -521,7 +521,7 @@ function enviarPedidoWhatsApp() {
 
 
     const numeroWhatsApp =
-        "573045751373";
+        "573237900424";
 
 
     let texto =
@@ -572,14 +572,10 @@ BEE HIVE INMOBILIARIA 🐝`;
 
 
     const urlWhatsApp =
-
-        "https://api.whatsapp.com/send?phone=" +
-
-        numeroWhatsApp +
-
-        "?text=" +
-
-        encodeURIComponent(texto);
+    "https://api.whatsapp.com/send?phone=" +
+    numeroWhatsApp +
+    "&text=" +
+    encodeURIComponent(texto);
 
 
     // =================================================
