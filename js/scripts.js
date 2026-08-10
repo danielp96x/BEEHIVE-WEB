@@ -526,7 +526,7 @@ function enviarPedidoWhatsApp() {
 
     let texto =
 
-`🐝 *PEDIDO DE ALQUILER - BEE HIVE RENTALS*
+        `🐝 *PEDIDO DE ALQUILER - BEE HIVE RENTALS*
 
 Hola BEE HIVE, quiero consultar la disponibilidad y condiciones para alquilar las siguientes herramientas:
 
@@ -560,7 +560,7 @@ Hola BEE HIVE, quiero consultar la disponibilidad y condiciones para alquilar la
 
     texto +=
 
-`━━━━━━━━━━━━━━━━━━━━
+        `━━━━━━━━━━━━━━━━━━━━
 
 📌 *Importante:*
 Deseo conocer la disponibilidad, precio final, duración del alquiler y condiciones correspondientes.
@@ -724,7 +724,7 @@ function enviarWhatsApp(event) {
 
     const textoWhatsApp =
 
-`🐝 *NUEVA CONSULTA DESDE LA PÁGINA WEB*
+        `🐝 *NUEVA CONSULTA DESDE LA PÁGINA WEB*
 
 👤 *Nombre:* ${nombre}
 
@@ -795,8 +795,13 @@ document.addEventListener(
                     );
 
                     menuBtn.setAttribute(
+
                         "aria-expanded",
                         abierto ? "true" : "false"
+                    );
+                    nav.classList.toggle(
+                        "show"
+
                     );
 
                 }
