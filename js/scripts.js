@@ -719,7 +719,7 @@ function enviarWhatsApp(event) {
 
 
     const numeroWhatsApp =
-        "573237904242";
+        "573237900424";
 
 
     const textoWhatsApp =
